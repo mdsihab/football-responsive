@@ -127,7 +127,7 @@ header a i {
 }
 
 .top_container:hover .top_banner_img img {
-    animation: imgAnimation 2s ease-in-out 5;
+    animation: imgAnimation 2s ease-in-out 3;
     transform: scale(1.05);
     transition: 0.5s linear;
 }
@@ -341,6 +341,7 @@ form textarea {
 }
 
 .footer_copy {
+    display: flex;
     text-align: center;
     color:#524141;
     margin: 25px 0;
@@ -391,30 +392,6 @@ form textarea {
         vertical-align: bottom;
     }
 
-    @keyframes imgAnimation {
-        0% {
-        transform: rotate(0deg);
-        }
-        5% {
-        top: 12%;
-        }
-        10% {
-        top: 20.5%;
-        }
-        25% {
-        top: 14%;
-        }
-        50% {
-        top: 20.5%;
-        }
-        75% {
-        top: 13%;
-        }
-        100% {
-        top: 20.5%;
-        transform: rotate(360deg);
-        }
-    }
     /* Player Section  */
     .players-content {
         margin-top: 25px;
@@ -451,6 +428,11 @@ form textarea {
         grid-template-columns: 280px;
         grid-row-gap: 10px;
     }
+
+    .footer_copy{
+        grid-template-columns: 280px;
+        grid-row-gap: 10px;
+    }
 }
 
 /*  Media Query Tablet */
@@ -483,31 +465,6 @@ form textarea {
       width: 100%;
       vertical-align: bottom;
     }
-
-    @keyframes imgAnimation {
-      0% {
-        transform: rotate(0deg);
-      }
-      5% {
-        top: 12%;
-      }
-      10% {
-        top: 20.5%;
-      }
-      25% {
-        top: 14%;
-      }
-      50% {
-        top: 20.5%;
-      }
-      75% {
-        top: 13%;
-      }
-      100% {
-        top: 20.5%;
-        transform: rotate(360deg);
-      }
-    }
   
     .players {
       margin: 35px;
@@ -520,6 +477,10 @@ form textarea {
 
     .contact_form form {
       grid-template-columns: repeat(2, 325px);
+    }
+
+    .footer_copy {
+        grid-template-columns: repeat(2, 325px);
     }
   }
 
@@ -542,31 +503,6 @@ form textarea {
     .top_banner_img img {
       width: 100%;
     }
-
-    @keyframes imgAnimation {
-      0% {
-        transform: rotate(0deg);
-      }
-      5% {
-        top: 12%;
-      }
-      10% {
-        top: 20.5%;
-      }
-      25% {
-        top: 14%;
-      }
-      50% {
-        top: 20.5%;
-      }
-      75% {
-        top: 13%;
-      }
-      100% {
-        top: 20.5%;
-        transform: rotate(360deg);
-      }
-    }
   
     .players {
       margin: 35px;
@@ -584,4 +520,5 @@ form textarea {
     .hightlight_image {
       overflow: hidden;
     }
+
   }
